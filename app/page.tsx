@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 
-export default function Page(): JSX.Element {
+export default function Page() {
   const [activeExp, setActiveExp] = useState<number | null>(0);
   const [skillFilter, setSkillFilter] = useState<string>("all");
   const heroRef = useRef<HTMLDivElement | null>(null);
