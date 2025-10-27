@@ -13,7 +13,7 @@ export default function Page() {
     if (!el) return;
 
     function onMove(e: MouseEvent) {
-      const rect = el.getBoundingClientRect();
+      const rect = el!.getBoundingClientRect();
       setMousePos({
         x: (e.clientX - rect.left) / rect.width,
         y: (e.clientY - rect.top) / rect.height,
